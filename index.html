@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <audio id="audio">
+            <source id="audioSource" src="" type="audio/mp3">
+        </audio>
+
+        <div class="player">
+            <h1>Gospel Praises</h1>
+
+            <div class="musicText"><br>
+                <h2 id="trackName"></h2>
+                <h3 id="artistName"></h3><br>
+            </div>
+
+            <div class="controls">
+                <div class="buttons">
+                    <img class="btn" id="playPause" onclick="play()" src="./Assets/icons_play.png" width="30">
+                    <img class="btn" id="backward" onclick="previousTrack()" src="./Assets/icons_backward.png" width="30px">
+                    <img class="btn" id="foward" onclick="nextTrack()" src="./Assets/icons_foward.png" width="30px">
+                    <img class="btn" id="back" onclick="return10()" src="./Assets/icons_repeat10.png" width="30px">
+                    <img class="btn" id="stop" onclick="stop()" src="./Assets/icons_stop.png" width="30px">
+                </div>
+
+                <div class="volume">
+                    <img class="button" id="vol" onclick="mute()" src="./Assets/icons_volmid.png">
+                    <input type="range" class="range" id="volRange" name="" min="0" max="">
+                    <span id="volValue">50</span>
+                </div>
+            </div>
+
+            <br><br>
+
+            <input type="range" class="range" id="timeRange" name="" min="0" max="">
+            <p id="timeLapse">00:00 / 00:00</p>
+        </div>
+    </div>
+
+    <script src="./Script/script.js"></script>
+</body>
+
+</html>

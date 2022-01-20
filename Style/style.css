@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../Assets/imagens/starfall.gif);
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.player {
+    color: whitesmoke;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 85%;
+}
+
+.btn {
+    background-color: whitesmoke;
+    border-radius: 100%;
+    margin-left: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.volume {
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: whitesmoke;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+span {
+    margin-right: 50px;
+    padding: 2px;
+    /*display: none;*/
+}
+
+#volRange {
+    width: 50%;
+}
+
+#timeLapse {
+    position: absolute;
+    top: 95%;
+}
+
+#timeRange {
+    width: 100%;
+    position: absolute;
+    top: 92%
+}
+
+@media screen and (max-width: 600px) {
+
+    .controls {
+        flex-direction: column;
+        top: 75%;
+    }
+
+    .volume {
+        flex-direction: column;
+        padding-left: 50px;
+        padding-top: 5px;
+    }
+
+    .btn {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    #volRange {
+        width: 40%;
+
+    }
+
+}

@@ -2,7 +2,7 @@
 
 <h2>Sobre</h2>
 
-Este é um projeto que visa aplicar conhecimentos básicos de HTML, CSS e Javascript para desenvolvimento de um site que funcione como reprodutor de uma playlist musical, com funcionalidades, botões e eventos.
+Este é um projeto que visa aplicar conhecimentos básicos de HTML, CSS, Javascript e Responsividade para desenvolvimento de um site que funcione como reprodutor de uma playlist musical em qualquer tela, com funcionalidades, botões e eventos.
 
 <h2>Tecnologias Utilizadas<h2>
   
